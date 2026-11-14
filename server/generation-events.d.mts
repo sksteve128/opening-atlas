@@ -1,0 +1,2 @@
+export type CommittedEvent = { type: 'move_committed'; batchId: string; jobId: string; sequence: number; timestamp: number; ply: number; fen: string; move: { uci: string; san: string; source: string }; stage: string; status: string }
+export function committedEvents(job: { id: string; status: string; sequence: number; events: CommittedEvent[]; ply: number; fen?: string; lastMove?: unknown }, batchId: string, line: { startFen: string; moves: { uci: string; san: string; source: string }[] }, stage: string): CommittedEvent[]
