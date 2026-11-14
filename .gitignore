@@ -30,3 +30,12 @@ dist-ssr
 # Generated from the installed Stockfish package
 public/engine/stockfish-19-lite-single.js
 public/engine/stockfish-19-lite-single.wasm
+
+# Local credentials and generated state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
