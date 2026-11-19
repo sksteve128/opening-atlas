@@ -2,7 +2,9 @@
 
 A local chess opening trainer that combines Stockfish analysis with Lichess opening data to explore likely continuations. Generate and practice a repertoire, inspect alternative lines, and visualize an engine's future moves on the board.
 
-![Board with a Stockfish continuation and future movement paths](docs/future-plan.jpg)
+![Italian Game movement paths with arrows and move-order numbers](docs/screenshots/movement-paths-italian.jpg)
+
+Movement paths keep arrows and move-order numbers without redundant destination-square fills. Selected-move highlights remain available.
 
 ![A generated line in interactive practice](docs/practice.jpg)
 
