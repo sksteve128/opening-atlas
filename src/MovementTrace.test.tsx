@@ -60,6 +60,8 @@ it('flips coordinates exactly and keeps repeated path arrow numbers and pointer-
  expect(html.match(/data-piece-id="wn@g1"/g)).toHaveLength(2)
  expect(html).toContain('data-ply="4"');expect(html).toContain('tabindex="0"')
  expect(html).toContain('aria-pressed="true"')
+ expect(html.match(/fill="#e2a447"/g)).toHaveLength(2)
+ expect(html).toContain('stroke="#733fa0"');expect(html).toContain('>4</text>')
 })
 it('arrow mouse, touch-click and keyboard selection share ply and never start searches',()=>{
  const hover=vi.fn(),select=vi.fn(),search=vi.spyOn(engine,'analyze')
